@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+    <title>Verolog challenge 2019</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css"> <!-- load c3 -->
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(a){
+          function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+          }({
+              instrumentationKey:"3a9be27a-2116-49b0-b9b3-e3bb533ee61c"
+          });
+        
+        window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.16/moment-timezone.min.js" integrity="sha256-qtZIsdieLAIFbUxkr2LottQ3TiyoMVzIW96jxCC4O+g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.16/moment-timezone-with-data.min.js" integrity="sha256-6HnS5oS8xsvJtNUKwS+JyRtLDK12a8MhA+RCDstVMkI=" crossorigin="anonymous"></script>
+
+    
+    
+</head>
+<body>
+    
+    
+	<div class="container-fluid">
+        <nav class="topbar navbar navbar-default">
+            <a href="index.html">
+                <div class="slogan">
+                    <span class="orange bold">VeRoLog</span>
+                    <span class="bold">Solver Challenge</span>
+                    <span>2019</span>
+                </div>
+            </a>
+            <ul class="nav navbar-nav menu-nav">  
+                <li><a href="index.html">Home</a></li>           
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="instances.html">Instances</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                
+                <li><a href="register.html">Register</a></li>
+                <li class="active"><a href="login.html">Login</a></li>
+                
+            </ul>
+            <a href="https://www.ortec.com" target="_blank"><img src="images/logo.png" alt="ORTEC" class="company-logo"></a>
+        </nav>
+        
+    </div>
+    <div class="container">
+        <div class="content">
+            
+    <div class="entry-content">
+        <h1>Welcome</h1>
+        <img src="images/VeRoLog_2019_staand_noslogan_452x800.png" style="float:right;width:226px;height:400px;margin-left:23px;margin-bottom:20px">
+        
+        <p>The VeRoLog Solver Challenge 2019 revolves around an exciting routing problem which combines distribution and subsequent installation of equipment, such as vending machines. We challenge you to use your creativity, problem solving and programming skills to find the cheapest solution.</p>
+<p>Please click <a href="pdf/VSC2019_info.pdf" target="_blank">here</a> for detailed information about the challenge, including the problem description, official rules and awards. The timeline below shows the important dates.</p>
+<div class="timeline">
+    <img src="images/timeline.png" style="width: 50%;">
+</div>
+
+<h2>Winners announcement</h2>
+<p>
+    After running the solvers of all the finalists on the set of hidden instances, the final ranking of the finalists in the restricted resources challenge was determined. 
+    A CSV file of all scores per team, seed and instance can be found <a href="raw/full-run-finalists-hidden-instances.csv" target="_blank">here</a>.
+    Based on these scores, the final ranking is as follows:
+    <table class="table table-condensed">
+        <thead>
+            <th>Final rank</th>
+            <th>Team</th>
+            <th class="text-right">Mean rank for hidden instances</th>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>UOS</td><td class="text-right">1.24</td></tr>
+            <tr><td>2</td><td>mjg</td><td class="text-right">2</td></tr>
+            <tr><td>3</td><td>COKA coders</td><td class="text-right">4.56</td></tr>
+            <tr><td>4</td><td>orlab</td><td class="text-right">4.8</td></tr>
+            <tr><td>5</td><td>TCS explorer</td><td class="text-right">5.32</td></tr>
+            <tr><td>6</td><td>aavk</td><td class="text-right">5.88</td></tr>
+            <tr><td>7</td><td>wanderer</td><td class="text-right">5.96</td></tr>
+            <tr><td>8</td><td>justFall</td><td class="text-right">6.24</td></tr>
+        </tbody>
+    </table>
+</p>
+<p>
+    This means that the prize winners of this year's VeRoLog Solver Challenge are:
+    <table class="table table-bordered table-condensed">
+        <tbody>
+            <tr><td>1st prize</td><td>Team UOS</td><td>Benjamin Graf</td><td>Osnabrück University, <br>Germany</td></tr>
+            <tr><td>2nd prize</td><td>Team mjg</td><td>Martin Josef Geiger</td><td>Helmut-Schmidt-University / <br>University of the Federal Armed Forces Hamburg, <br>Germany</td></tr>
+            <tr><td>3rd prize</td><td>Team COKA coders</td><td>Caroline Jagtenberg, <br>Andrea Raith, <br>Michael Sundvick, <br>Kevin Shen, <br>Oliver Maclaren, <br>and Andrew Mason</td><td>The University of Auckland, <br>New Zealand</td></tr>
+        </tbody>
+    </table>
+    The prizes were awarded during the gala dinner at the VeRoLog conference in Seville on June 4, 2019 (see photo below).
+</p>
+<p>
+<img src="images/winners.png">
+</p>
+<p>
+    Congratulations to all winners, and a huge thank you to all participants for making this VeRoLog Solver Challenge such an interesting and rewarding experience!
+</p>
+
+<h2>Finalists announcement</h2>
+<p>
+    After having validated and processed all the submitted solvers, we are pleased to announce the finalists of the restricted resources challenge. The following teams -in alphabetic order- have reached the final:
+    <table class="table table-bordered table-condensed">
+        <thead>
+            <th>Team</th>
+        </thead>
+        <tbody>
+            <tr><td>aavk</td></tr>
+            <tr><td>COKA coders</td></tr>
+            <tr><td>justFall</td></tr>
+            <tr><td>mjg</td></tr>
+            <tr><td>orlab</td></tr>
+            <tr><td>TCS explorer</td></tr>
+            <tr><td>UOS</td></tr>
+            <tr><td>wanderer</td></tr>
+        </tbody>
+    </table>
+
+    Congratulations to all finalists! The final results of the restricted resources challenge will be announced -and the prizes will be awarded- during the gala dinner of the VeRoLog meeting in Seville on 4 June <a href="https://verolog2019.sciencesconf.org" target="_blank">https://verolog2019.sciencesconf.org</a>.
+</p>
+
+<h2>Special thanks</h2>
+<p>ORTEC and VeRoLog acknowledge the support of FICO, GUROBI and IBM for providing licenses of their solvers Xpress, GUROBI and CPLEX respectively!
+This allows ORTEC to make use of these solvers in the finals, and therefore your programs may call on any of these solvers. 
+</p>
+<p>May you require a personal license for the sake of developing your programs for the challenge, please note that these companies implement academic initiatives, see:
+    <ul>
+
+
+<li><strong>FICO:</strong> <a href="https://community.fico.com/s/academic-programs" target="_blank">https://community.fico.com/s/academic-programs</a> </li>
+<li><strong>GUROBI:</strong> <a href="http://www.gurobi.com/academia/academia-center" target="_blank">http://www.gurobi.com/academia/academia-center</a>  </li>
+<li><strong>IBM:</strong> <a href="http://ibm.biz/AI_CPLEX128" target="_blank">http://ibm.biz/AI_CPLEX128</a></li>
+</ul>
+</p>
+<p>
+    Those that participate in the challenge and want to use any of these solvers but are not eligible within the corresponding academic initiatives, may contact respectively:
+    <ul>
+        <li><strong>FICO:</strong> Timo Berthold (TimoBerthold@fico.com)</li>
+        <li><strong>GUROBI:</strong> Frédéric Baumann (baumann@gurobi.com) </li>
+        <li><strong>IBM:</strong> Sofiane Oussedik (soussedik@fr.ibm.com)</li>
+    </ul>
+</p>
+
+<h2>History</h2>
+
+<p>
+        The VeRoLog Solver Challenge (VSC) is aimed at promoting the development of effective algorithms for real-world applications in Vehicle Routing. 
+        The problem subject of the challenge is selected by VeRoLog in collaboration with a company. 
+        PTV organized the first and second editions of the VSC in 2014 and 2015, respectively. 
+        The third edition, held in 2017, was organized by ORTEC; see <a href="https://verolog2017.ortec.com/" target="_blank">https://verolog2017.ortec.com/</a> for more information.
+</p>
+
+
+
+
+   <!--     <p>Welcome to the most challenging vehicle routing optimization competition!</p>
+        <p>The VeRoLog Solver Challenge (VSC) is hosted by <a href="http://www.verolog.eu/" target="_blank" rel="noopener">VeRoLog</a>, the Working Group on Vehicle Routing and Logistics Optimization. This is a working group within <a href="https://www.euro-online.org/web/pages/1/home" target="_blank" rel="noopener">EURO</a>, the Association of European Operational Research Societies. The challenge is aimed at promoting the development of effective algorithms for real-world applications in Vehicle Routing. The problem subject of the challenge is defined by the VeRoLog board in collaboration with a company and is accompanied by real-world instances of the problem.</p>
+        <p>The first edition of the VSC was held in 2014. The third edition of the challenge, organized by ORTEC, finished in July 2017. Please visit the <a href="https://verolog2017.ortec.com/" target="_blank" rel="noopener">website</a> for information on the challenge, including a list of all the finalists and winners. Note that you can still submit your solutions and try to get your name on the all-time best list!</p>
+        <p>The VeRoLog Solver Challenge 2019 is proposed, sponsored and organized by ORTEC. Please keep an eye on this website for information about the new challenge.</p>
+        <p>The ORTEC VeRoLog Solver Challenge team</p>-->
+    </div>
+
+
+    </div>
+</div>
+</body>
+</html>

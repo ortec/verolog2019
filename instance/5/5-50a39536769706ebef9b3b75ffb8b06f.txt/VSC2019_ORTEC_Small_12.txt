@@ -1,0 +1,61 @@
+DATASET = ORTEC Small VeRoLog 2019
+NAME = Instance 12
+
+DAYS = 7
+TRUCK_CAPACITY = 18
+TRUCK_MAX_DISTANCE = 980
+
+TRUCK_DISTANCE_COST = 1000
+TRUCK_DAY_COST = 10000
+TRUCK_COST = 1000
+TECHNICIAN_DISTANCE_COST = 10000
+TECHNICIAN_DAY_COST = 1000
+TECHNICIAN_COST = 100
+
+MACHINES = 4
+    1     3   395
+    2     5   550
+    3     7    70
+    4     7   140
+
+LOCATIONS = 9
+    1   268   504
+    2   381   382
+    3   275   452
+    4   634   417
+    5   400   405
+    6   757   473
+    7   541   432
+    8   479   357
+    9   510   358
+
+REQUESTS = 16
+    1     9     1     2     3     2
+    2     8     1     2     4     2
+    3     4     1     3     1     1
+    4     6     1     2     1     3
+    5     3     1     3     3     2
+    6     7     1     3     1     2
+    7     5     1     3     4     1
+    8     2     2     4     3     1
+    9     3     2     3     3     1
+   10     5     2     4     1     1
+   11     8     2     4     1     2
+   12     9     2     3     3     2
+   13     2     2     3     1     3
+   14     4     3     4     4     2
+   15     4     3     4     3     2
+   16     8     4     5     4     2
+
+TECHNICIANS = 10
+    1     5   740     5  1 0 0 0
+    2     4   335     5  1 0 1 1
+    3     1   880     6  1 0 0 0
+    4     6   735     5  1 0 0 0
+    5     1   350    10  0 1 1 1
+    6     7   500    10  1 0 1 0
+    7     1   805     7  1 0 0 1
+    8     6   655     9  0 0 0 1
+    9     1   695     7  1 1 0 1
+   10     1   620    10  1 1 1 0
+

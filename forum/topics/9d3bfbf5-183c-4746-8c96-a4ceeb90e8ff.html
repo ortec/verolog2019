@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+    <title>Verolog challenge 2019</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css"> <!-- load c3 -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(a){
+          function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+          }({
+              instrumentationKey:"3a9be27a-2116-49b0-b9b3-e3bb533ee61c"
+          });
+        
+        window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.16/moment-timezone.min.js" integrity="sha256-qtZIsdieLAIFbUxkr2LottQ3TiyoMVzIW96jxCC4O+g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.16/moment-timezone-with-data.min.js" integrity="sha256-6HnS5oS8xsvJtNUKwS+JyRtLDK12a8MhA+RCDstVMkI=" crossorigin="anonymous"></script>
+
+    
+    
+</head>
+<body>
+    
+<script type="text/javascript">
+    $(function(){
+
+        $('.add-comment-link').click(function(e) {
+            $(this).closest('.add-comment-wrapper').find('.add-comment-content').show();
+            $(this).hide();
+        });
+});
+</script>
+
+	<div class="container-fluid">
+        <nav class="topbar navbar navbar-default">
+            <a href="../../index.html">
+                <div class="slogan">
+                    <span class="orange bold">VeRoLog</span>
+                    <span class="bold">Solver Challenge</span>
+                    <span>2019</span>
+                </div>
+            </a>
+            <ul class="nav navbar-nav menu-nav">  
+                <li><a href="../../index.html">Home</a></li>           
+                <li><a href="../../forum.html">Forum</a></li>
+                <li><a href="../../downloads.html">Downloads</a></li>
+                <li><a href="../../instances.html">Instances</a></li>
+                <li><a href="../../publications.html">Publications</a></li>
+                
+                <li><a href="../../register.html">Register</a></li>
+                <li class="active"><a href="../../login.html">Login</a></li>
+                
+            </ul>
+            <a href="https://www.ortec.com" target="_blank"><img src="../../images/logo.png" alt="ORTEC" class="company-logo"></a>
+        </nav>
+        
+    </div>
+    <div class="container">
+        <div class="content">
+            
+
+
+
+<div class="forum">
+<div class="thread">
+    <div class="thread-header">
+        <div class="thread-header-title">Restricted Resources Challenge: Rules 3.3 and 3.4</div>
+        <div class="thread-header-content"> Dear Organizers,<br><br>could you please clarify the rules 3.3 and 3.4. Given some computer C and a timelimit T, a solver produces a trajectory (C,T) in the search space. Given another computer C&#39; and an infinite timelimit, does rule 3.3. require that the trajectory (C,T) is a prefix of trajectory (C&#39;,inf), i.e. is the time limit&#39;s sole purpose to halt the solver?<br><br>Thanks in advance, kind regards<br>bg</div>
+        <div class="thread-header-info">
+            <div class="">&lt;hidden&gt; - January 15, 2019 4:53 PM</div>
+        </div>
+    </div>
+    <div class="thread-replies">
+        <div class="replies-header">7 Replies:</div>
+        
+        <div class="thread-reply">
+            <div class="reply-content">Dear bg/ UOS team,<br>as another participant, I cannot give an official response. However, it&#39;s not my first rodeo, so I can tell you this, hoping that you find it useful:<br><br>My best guess is that, from the _organizers&#39; perspective_, the time limit is only relevant for stopping the solver. They will need to assess the quality of the obtained results, re-start the solvers with another instance, etc. Other competitions implement this in a different way, i.e., by sending a (UNIX) signal to your application prompting it to stop. See the PACE-Challenges for this. In our case here, the running time is given as a parameter when executing the program. </div>
+            <div class="reply-info">
+                    <div class="reply-user">&lt;hidden&gt; - January 17, 2019 11:30 AM ( 7 years ago )</div>
+            </div>
+            <div class="reply-comments">
+                    
+                    
+                </div>
+        </div>
+        
+        <div class="thread-reply">
+            <div class="reply-content">From _your_ (our) perspective however, my guess is that the trajectory (C,T) is not necessarily &quot;only&quot; a prefix of (C&#39;,inf). It might make sense setting some internal parameters depending on T. This can be relevant in case you are pre-computing a lot of helpful sub-problems before solving the actual problem. The time allocated for the pre-processing phase therefore will depend on T, so the exhibited behavior of the algorithm is influenced by the parameter (T).<br><br>Sincerely,<br>MJG</div>
+            <div class="reply-info">
+                    <div class="reply-user">&lt;hidden&gt; - January 17, 2019 11:32 AM ( 7 years ago )</div>
+            </div>
+            <div class="reply-comments">
+                    
+                    
+                </div>
+        </div>
+        
+        <div class="thread-reply">
+            <div class="reply-content">Dear MJG,<br>first, thank you for your reply.<br><br>Let me add some thoughts regarding T influencing the exhibited behavior: <br><br>The processing speed of the machine is unknown, providing a timelimit f(T) &lt; T for external solvers (assuming deterministic mode) like CPLEX etc. will be inconsistent across platforms even for equal seeds and time limits. Therefore T can be only used to estimate some sort of other computational budget not related to time at all (e.g. iterations). Same holds for &quot;allocating time&quot; for pre-processing, which can only happen in the form of estimating some other deterministic time-independent budget. <br><br></div>
+            <div class="reply-info">
+                    <div class="reply-user">&lt;hidden&gt; - January 17, 2019 1:22 PM ( 7 years ago )</div>
+            </div>
+            <div class="reply-comments">
+                    
+                    
+                </div>
+        </div>
+        
+        <div class="thread-reply">
+            <div class="reply-content">...<br>Estimating a time-independent budget from a time limit is meaningless if nothing is known about the machine or the scaling behavior of the benchmark-derived factor. If the trajectory was influenced by T this would violate my interpretation of rule 3.3. So I&#39;m rather interested in what the Organizers actually meant.<br><br>Regards<br>bg</div>
+            <div class="reply-info">
+                    <div class="reply-user">&lt;hidden&gt; - January 17, 2019 1:26 PM ( 7 years ago )</div>
+            </div>
+            <div class="reply-comments">
+                    
+                    
+                </div>
+        </div>
+        
+        <div class="thread-reply">
+            <div class="reply-content">True. It will be impossible to guarantee that the exact outcome can be reproduced.<br>My best guess is that rule 3.3, which reads &quot;... should code ...&quot;, means that this is a desirable property, but, given the this discussion above, not a requirement.<br><br>MJG</div>
+            <div class="reply-info">
+                    <div class="reply-user">&lt;hidden&gt; - January 18, 2019 6:37 AM ( 7 years ago )</div>
+            </div>
+            <div class="reply-comments">
+                    
+                    
+                </div>
+        </div>
+        
+        <div class="thread-reply">
+            <div class="reply-content">Dear BG, MJG,<br><br>Thank you very much for raising and feeding the discussion. <br>We agree to all that has been assumed above, and can add the following:<br>- The running environment will be setup as a single processor/single core machine. Instances are validated with your solver sequentially, so only one solver process runs at each time.<br>- The parameter T given to the process at startup is computed with respect to the calibration factor of that machine, in the way specified by rule 3.4. The solver process can therefore estimate the calibration factor: an instance with n orders that results in a time budget of T = ceil( f * ( n + 10 ) ) leads to f being approximately T / ( n + 10 ). <br>- We expect the solver process to stop graciously at latest T seconds after being spawned, otherwise we kill the process. Even in case the process is killed, the solution written during execution is taken. This solution can be rewritten as often as desired until the process stops or is stopped. <br>- The process of rewriting the solution file should preferably be atomic to avoid the possibility of file corruption. A practical way is to write a new file and replace the solution file by the new file. This has atomic implementations in the Windows OS, the exact function depends on your programming language. <br>We hope that this helps clarifying the issue, <br><br>with our best regards, VSC2019. </div>
+            <div class="reply-info">
+                    <div class="reply-user admin-label">VSC 2019 Organization - January 18, 2019 2:25 PM ( 7 years ago )</div>
+            </div>
+            <div class="reply-comments">
+                    
+                    
+                </div>
+        </div>
+        
+        <div class="thread-reply">
+            <div class="reply-content">Dear Organizers,<br><br>thank you for the answers.<br><br>Regards<br>bg</div>
+            <div class="reply-info">
+                    <div class="reply-user">&lt;hidden&gt; - January 22, 2019 1:11 PM ( 7 years ago )</div>
+            </div>
+            <div class="reply-comments">
+                    
+                    
+                </div>
+        </div>
+        
+    </div>
+
+    
+</div>
+
+    </div>
+</div>
+</body>
+</html>
